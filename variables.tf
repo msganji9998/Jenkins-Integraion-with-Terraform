@@ -17,10 +17,10 @@ variable "aws_region" {
 }
 
 
-variable "ami" {
+variable "ami_id" {
    type        = string
    description = "Ubuntu AMI ID"
-   default     = "ami-0f5ee92e2d63afc18"
+   default     = "ami-078264b8ba71bc45e"
 }
 
 variable "instance_type" {
@@ -34,3 +34,9 @@ variable "name_tag" {
    description = "Name of the EC2 instance"
    default     = "My EC2 Instance"
 }
+
+variable "key_name" {
+  description = "Secret pem file name of these ec-2 instances"
+  default     = "K8S-Key"
+}
+
